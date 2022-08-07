@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 func getIcon(s string) []byte {
-	b, err := ioutil.ReadFile(s)
+	b, err := os.ReadFile(s)
 	if err != nil {
 		fmt.Print(err)
 	}
